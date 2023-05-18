@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #333333;
+    --secondary-color: #FFFFFF;
+    --tertiary-color: #FFB03B;
+    --accent-blue: #1A8FE3;
+    --accent-pink: #FF66A3;
+    --off-white: #EFEFEF;
+    --light-gray: #F7F7F7;
+}
+
+.website-section {
+    padding: 30px;
+}
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar .navbar-brand {
+    padding-left: 15px;
+    color: var(--secondary-color);
+    text-decoration: bold;
+}
+
+.navbar .nav-link {
+    color: var(--tertiary-color);
+}
+
+#about-me {
+    background-color: var(--off-white);
+}
+
+#projects {
+    background-color: var(--light-gray);
+}
+
+#skills {
+    background-color: var(--off-white);
+}
+
+#contact {
+    background-color: var(--light-gray);
+}
+
+#profile-pic {
+    border-radius: 50%;
+    max-height: 300px;
+}

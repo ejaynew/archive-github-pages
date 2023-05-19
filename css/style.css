@@ -6,6 +6,7 @@
     --accent-pink: #FF66A3;
     --off-white: #EFEFEF;
     --light-gray: #F7F7F7;
+
 }
 
 .website-section {
@@ -13,24 +14,49 @@
 }
 
 .navbar {
-    background-color: var(--primary-color);
+    background-color: var(--accent-pink);
 }
 
 .navbar .navbar-brand {
     padding-left: 15px;
-    color: var(--secondary-color);
-    text-decoration: bold;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.8rem;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.navbar .navbar-brand:hover {
+    color: transparent;
+    transition: 0.5s ease;
 }
 
 .navbar .nav-link {
+    color: var(--secondary-color);
+    transition: color 0.5s;
+}
+
+.navbar .nav-link:hover {
     color: var(--tertiary-color);
 }
 
+.website-section {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
 #about-me {
+    padding-top: 100px;
     background-color: var(--off-white);
 }
 
-#projects {
+#about-me p {
+    padding-left: 20px;
+}
+
+#code-samples {
     background-color: var(--light-gray);
 }
 
@@ -38,8 +64,35 @@
     background-color: var(--off-white);
 }
 
+#skills #skills-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+#skills #skills-container i {
+    color: var(--accent-blue);
+    font-size: 50px;
+}
+
 #contact {
+    padding-top: 100px;
     background-color: var(--light-gray);
+}
+
+#contact p {
+    padding-left: 20px;
+}
+
+#contact a {
+    text-decoration: none;
+    color: var(--accent-blue);
+    font-size: 30px;
+    transition: color 0.5s;
+}
+
+#contact a:hover {
+    color: var(--tertiary-color);
 }
 
 #profile-pic {
@@ -47,6 +100,6 @@
     max-height: 300px;
 }
 
-.projects-container {
+.code-samples-container {
     padding: 30px;
 }

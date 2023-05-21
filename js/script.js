@@ -15,6 +15,14 @@ const isScrollingDown = () => {
 
 const nav = document.querySelector('.navbar');
 
+function toggleMenu(x) {
+    x.classList.toggle("change");
+    const y = document.querySelector(".nav-overlay");
+    y.classList.toggle("hidden");
+    const w = document.querySelector("#about-me");
+    w.classList.toggle("collapsed");
+}
+
 const handleNavScroll = () => {
     if (isScrollingDown() && !nav.contains(document.activeElement)) {
         nav.classList.add('scroll-down');

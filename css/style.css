@@ -4,9 +4,9 @@
     --tertiary-color: #FFB03B;
     --accent-blue: #1A8FE3;
     --accent-pink: #FF66A3;
+    --accent-pink-lighter: #f778ab;
     --off-white: #EFEFEF;
     --light-gray: #F7F7F7;
-
 }
 
 .website-section {
@@ -15,11 +15,12 @@
 
 .navbar {
     background-color: var(--accent-pink);
-    transition: top 500ms ease-in;
+    transition: top 500ms ease;
 }
 
 .scroll-down {
-    opacity: 80%;
+    top: -1%;
+    bottom: 93%;
 }
 
 .navbar .navbar-brand {
@@ -33,36 +34,131 @@
     -webkit-background-clip: text;
 }
 
-.navbar .navbar-brand:hover {
-    color: transparent;
-    transition: 0.5s ease;
+.nav-link {
+    visibility: hidden;
 }
 
-.navbar .nav-link {
+.nav-overlay {
+    padding-top: 80px;
+    transition: top 500ms ease;
+    background-color: var(--accent-pink-lighter);
+    padding-bottom: 10px;
+}
+
+.nav-overlay a {
     color: var(--secondary-color);
     transition: color 0.5s;
 }
 
-.navbar .nav-link:hover {
-    color: var(--tertiary-color);
+.nav-overlay ul {
+    list-style-type: none;
 }
 
-.website-section {
-    padding-left: 100px;
-    padding-right: 100px;
+.nav-overlay a:hover {
+    color: var(--tertiary-color);
+    transition: color 0.5s;
+}
+
+.hidden {
+    display: none;
+    transition: top 500ms ease;
+}
+
+.nav-overlay a {
+    cursor: pointer;
+}
+
+.menu-container {
+    position: absolute;
+    cursor: pointer;
+    margin-left: 90%;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--primary-color);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.navbar {
+    max-height: 70px;
+}
+
+@media (min-width: 768px) {
+    .website-section {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .menu-container {
+        display: none;
+    }
+
+    .navbar .navbar-brand:hover {
+        color: transparent;
+        transition: 300ms ease;
+    }
+
+    .navbar .nav-link {
+        visibility: visible;
+        color: var(--secondary-color);
+        transition: color 0.5s;
+    }
+
+    .navbar .nav-link:hover {
+        color: var(--tertiary-color);
+    }
 }
 
 #about-me {
-    padding-top: 100px;
     background-color: var(--off-white);
+}
+
+.collapsed {
+    margin-top: 60px;
 }
 
 #about-me p {
     padding-left: 20px;
 }
 
+#profile-pic {
+    border-radius: 50%;
+    max-height: 15em;
+}
+
 #code-samples {
     background-color: var(--light-gray);
+}
+
+.code-samples-container {
+    padding: 30px;
+}
+
+#code-samples .card {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding: 0;
 }
 
 #skills {
@@ -71,6 +167,7 @@
 }
 
 #skills #skills-container {
+    margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
@@ -99,13 +196,4 @@
 
 #contact a:hover {
     color: var(--tertiary-color);
-}
-
-#profile-pic {
-    border-radius: 50%;
-    max-height: 300px;
-}
-
-.code-samples-container {
-    padding: 30px;
 }

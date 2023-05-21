@@ -15,6 +15,11 @@
 
 .navbar {
     background-color: var(--accent-pink);
+    transition: top 500ms ease-in;
+}
+
+.scroll-down {
+    opacity: 80%;
 }
 
 .navbar .navbar-brand {
@@ -62,6 +67,7 @@
 
 #skills {
     background-color: var(--off-white);
+    min-height: 200px;
 }
 
 #skills #skills-container {

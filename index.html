@@ -20,6 +20,13 @@
                 <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                 <li class="nav-item"><a class="nav-link" href="./html/contact.html">Contact</a></li>
             </ul>
+            <div class="nav-separator">
+                <div class="separator"></div>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onclick="toggleDark()">
+                <label class="form-check-label nav-link" for="flexSwitchCheckDefault">Dark mode</label>
+              </div>
             <span class="menu-container" onclick="toggleMenu(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -28,7 +35,7 @@
         </nav>
     </div>
 
-    <div class="nav-overlay hidden">
+    <div class="nav-overlay hidden sticky-top">
         <ul>
             <li><a href="#about-me">About me</a></li>
             <li><a href="#code-samples">Code samples</a></li>
@@ -37,7 +44,7 @@
         </ul>
     </div>
 
-    <div class="website-section collapsed" id="about-me">
+    <div class="website-section collapsed about-me">
         <h3>About me</h3>
         <div class="row">
             <div class="col-md-8">
@@ -70,7 +77,7 @@
 
     </div>
 
-    <div class="website-section" id="code-samples">
+    <div class="website-section code-samples">
         <h3>Code samples</h3>
         <div class="row row-cols-auto code-samples-container">
             <div class="col mx-auto">
@@ -117,9 +124,9 @@
         </div>
     </div>
 
-    <div class="website-section" id="skills">
+    <div class="website-section skills">
         <h3>Skills & preferred tech</h3>
-        <div id="skills-container">
+        <div class="skills-container">
             <i class="devicon-git-plain" alt="git"></i>
             <i class="devicon-vscode-plain" alt="vscode"></i>
             <i class="devicon-html5-plain-wordmark" alt="html5"></i>
@@ -136,6 +143,14 @@
             <i class="devicon-heroku-original" alt="heroku"></i>
             <i class="devicon-salesforce-plain" alt="salesforce"></i>
         </div>
+    </div>
+
+    <div class="website-section contact">
+        <h3>Contact</h3>
+        <p>If you have an interesting project, I would love to hear about it!</p>
+        <a href="https://github.com/ejaynew" target="_blank"><i class="devicon-github-original"
+                style="padding-left: 20px;"></i></a>
+        <a href="https://www.linkedin.com/in/ejaynew/" target="_blank"><i class="devicon-linkedin-plain"></i></a>
     </div>
 </body>
 

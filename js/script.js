@@ -19,8 +19,26 @@ function toggleMenu(x) {
     x.classList.toggle("change");
     const y = document.querySelector(".nav-overlay");
     y.classList.toggle("hidden");
-    const w = document.querySelector("#about-me");
+    const w = document.querySelector(".about-me");
     w.classList.toggle("collapsed");
+}
+
+function toggleDark() {
+    nav.classList.toggle("navbar-dark");
+    const x = document.querySelector(".navbar-brand");
+    x.classList.toggle("navbar-brand-dark")
+    const y = document.querySelectorAll(".nav-link");
+    y.forEach((navLink) => {
+        navLink.classList.toggle("nav-link-dark");
+    });
+    const w = document.querySelector(".about-me");
+    w.classList.toggle("about-me-dark");
+    const u = document.querySelector(".code-samples");
+    u.classList.toggle("code-samples-dark");
+    const r = document.querySelector(".skills");
+    r.classList.toggle("skills-dark");
+    const p = document.querySelector(".contact");
+    p.classList.toggle("contact-dark");
 }
 
 const handleNavScroll = () => {

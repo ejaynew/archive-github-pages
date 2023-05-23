@@ -19,13 +19,17 @@
     --light-gray-dark: #333333;
 }
 
+body {
+    transition: 500ms ease;
+}
+
 .website-section {
     padding: 30px;
 }
 
 .navbar {
     background-color: var(--accent-pink);
-    transition: top 1000ms ease;
+    transition: 500ms ease;
 }
 
 .navbar-dark {
@@ -51,7 +55,7 @@
     background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
     background-clip: text;
     -webkit-background-clip: text;
-    transition: top 1000ms ease;
+    transition: 500ms ease;
 }
 
 .navbar .navbar-brand-dark {
@@ -150,7 +154,7 @@
     .navbar .nav-link {
         visibility: visible;
         color: var(--secondary-color);
-        transition: color 0.5s;
+        transition: 500ms ease;
     }
 
     .nav-link-dark {
@@ -164,6 +168,7 @@
 
 .about-me {
     background-color: var(--off-white);
+    transition: 500ms ease;
 }
 
 .about-me-dark {
@@ -173,6 +178,7 @@
 .about-me-dark h3,
 .about-me-dark p {
     color: var(--off-white) !important;
+    transition: 500ms ease;
 }
 
 .collapsed {
@@ -190,6 +196,7 @@
 
 .code-samples {
     background-color: var(--light-gray);
+    transition: 500ms ease;
 }
 
 .code-samples-dark {
@@ -201,10 +208,12 @@
 .code-samples-dark h6,
 .code-samples-dark p {
     color: var(--off-white) !important;
+    transition: 500ms ease;
 }
 
 .code-samples-dark .card {
     background-color: var(--off-white-dark) !important;
+    transition: 500ms ease;
 }
 
 .code-samples-container {
@@ -220,14 +229,20 @@
 .skills {
     background-color: var(--off-white);
     min-height: 200px;
+    transition: 500ms ease;
 }
 
 .skills-dark {
     background-color: var(--off-white-dark) !important;
 }
 
+.skills-dark i {
+    color: var(--accent-blue-dark) !important;
+}
+
 .skills-dark h3 {
     color: var(--off-white) !important;
+    transition: 500ms ease;
 }
 
 .skills .skills-container {
@@ -237,14 +252,13 @@
     text-align: center;
     color: var(--accent-blue);
     font-size: 50px;
+    transition: ease 500ms;
 }
 
-.skills-container .skills-dark {
-    color: var(--accent-blue-dark) !important;
-}
 
 .contact {
     background-color: var(--light-gray);
+    transition: ease 500ms;
 }
 
 .contact-dark {
@@ -267,6 +281,15 @@
     transition: color 0.5s;
 }
 
+.contact-dark i {
+    color: var(--accent-blue-dark);
+    transition: 500ms ease;
+}
+
 .contact a:hover {
     color: var(--tertiary-color);
+}
+
+.contact-dark i:hover {
+    color: var(--tertiary-color-dark) !important;
 }

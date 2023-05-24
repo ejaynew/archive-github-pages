@@ -191,7 +191,8 @@ body {
 
 #profile-pic {
     border-radius: 50%;
-    max-height: 15em;
+    width: 70%;
+    height: auto;
 }
 
 .code-samples {
@@ -284,6 +285,10 @@ body {
 .contact-dark i {
     color: var(--accent-blue-dark);
     transition: 500ms ease;
+}
+
+.contact-links {
+    text-align: center;
 }
 
 .contact a:hover {
